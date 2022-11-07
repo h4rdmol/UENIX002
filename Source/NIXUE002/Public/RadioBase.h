@@ -28,8 +28,8 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "NiXTab")
 	UAudioComponent* Audio;
 
-	UFUNCTION()
-	virtual void PauseAudio();
+	UFUNCTION(BlueprintNativeEvent)
+	void PauseAudio();
 
 public:	
 	// Called every frame
