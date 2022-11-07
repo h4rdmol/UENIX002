@@ -25,12 +25,10 @@ void ARadioBase::BeginPlay()
 	UE_LOG(LogTemp, Warning, TEXT("Hello from base class"));
 }
 
-
-void ARadioBase::PauseAudio()
+void ARadioBase::PauseAudio_Implementation()
 {
 	Audio->SetPaused(true);
 }
-
 
 // Called every frame
 void ARadioBase::Tick(float DeltaTime)

@@ -26,8 +26,8 @@ void OnOverlapBegin(UPrimitiveComponent* overlappedComponent, AActor* otherActor
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
-	virtual void PauseAudio() override;
+	
+	 void PauseAudio();
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UBoxComponent* BoxCollision;
